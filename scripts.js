@@ -677,6 +677,7 @@ Test data:
 § Data 2: Julia's data [9, 16, 6, 8, 3], Kate's data [10, 5, 6, 1, 4]
 Hints: Use tools from all lectures in this section so far */
 
+/*
 const dogsJulia = [3, 5, 2, 12, 7];
 const dogsKate = [4, 1, 15, 8, 3];
 
@@ -698,6 +699,8 @@ const checkDogs = function (dogsJulia, dogsKate) {
 
 checkDogs(dogsJulia, dogsKate);
 
+*/
+
 /* Coding Challenge #2
 Let's go back to Julia and Kate's study about dogs. This time, they want to convert
 dog ages to human ages and calculate the average age of the dogs in their study.
@@ -717,6 +720,7 @@ Test data:
 § Data 2: [16, 6, 10, 5, 6, 1, 4]
 */
 
+/*
 const ages1 = [5, 2, 4, 1, 15, 8, 3];
 const ages2 = [16, 6, 10, 5, 6, 1, 4];
 
@@ -737,6 +741,7 @@ const avg1 = calcAverageHumanAge(ages1);
 const avg2 = calcAverageHumanAge(ages2);
 
 console.log(avg1, avg2);
+*/
 
 /*Coding Challenge #3
 Rewrite the 'calcAverageHumanAge' function from Challenge #2, but this time
@@ -746,6 +751,8 @@ Test data:
 § Data 2: [16, 6, 10, 5, 6, 1, 4] */
 
 // My solution - Coding Challenge 3
+
+/*
 
 const calcAverageHumanAgeArrow = (ages) =>
   ages
@@ -757,6 +764,7 @@ const avg1Arrow = calcAverageHumanAge(ages1);
 const avg2Arrow = calcAverageHumanAge(ages2);
 
 console.log(avg1Arrow, avg2Arrow);
+*/
 
 /* Coding Challenge #4
 Julia and Kate are still studying dogs, and this time they are studying if dogs are
@@ -791,6 +799,8 @@ portion in an ascending order (keep in mind that the portions are inside the
 array's objects 😉) */
 
 // My solution - Coding Challenge 4
+
+/*
 
 const dogs = [
   { weight: 22, curFood: 250, owners: ["Alice", "Bob"] },
@@ -841,3 +851,48 @@ console.log(dogs.filter(dogsEatOkay));
 // 8
 const dogsAscending = dogs.slice().sort((a, b) => a.recFood - b.recFood);
 console.log(dogsAscending);
+*/
+
+////////////////////////////////////////////
+// OBJECT-ORIENTED PROGRAMMING IN JAVASCRIPT
+
+/*The Complete JavaScript Course 27
+Object Oriented Programming (OOP)
+Coding Challenge #1
+Your tasks:
+1. Use a constructor function to implement a 'Car'. A car has a 'make' and a
+'speed' property. The 'speed' property is the current speed of the car in
+km/h
+2. Implement an 'accelerate' method that will increase the car's speed by 10,
+and log the new speed to the console
+3. Implement a 'brake' method that will decrease the car's speed by 5, and log
+the new speed to the console
+4. Create 2 'Car' objects and experiment with calling 'accelerate' and
+'brake' multiple times on each of them
+Test data:
+§ Data car 1: 'BMW' going at 120 km/h
+§ Data car 2: 'Mercedes' going at 95 km/h
+*/
+
+const Car = function (make, speed) {
+  this.make = make;
+  this.speed = speed;
+};
+
+Car.prototype.accelerate = function () {
+  this.speed += 10;
+  console.log(`${this.make}: ${this.speed} km/h`);
+};
+
+Car.prototype.brake = function () {
+  this.speed -= 5;
+  console.log(`New speed of ${this.make} is ${this.speed}`);
+};
+
+const bmw = new Car("BMW", 120);
+const mercedes = new Car("Mercedes", 95);
+
+bmw.accelerate();
+bmw.brake();
+mercedes.accelerate();
+mercedes.brake();
