@@ -52,6 +52,17 @@ console.log(areTrue(false, true));*/
 /* You need to create two functions to substitute toString() and parseInt(); A function called intToString() that converts integers into strings and a function called stringToInt() that converts strings into integers.
 You will get bonus points if you manage to solve this without using toString, parseInt or parseFloat.*/
 
-const [intToString, stringToInt] = [String, Number];
+/*const [intToString, stringToInt] = [String, Number];
 
-console.log(intToString(4), stringToInt("2"));
+console.log(intToString(4), stringToInt("2"));*/
+
+//// 50-30-20-STRATEGY
+/*The 50-30-20 strategy is a simple way to budget, which involves spending 50% of after-tax income on needs, 30% after tax income on wants, and 20% after-tax income on savings or paying off debt.
+
+Given the after-tax income as ati, what you are supposed to do is to make a function that will return an object that shows how much a person needs to spend on needs, wants, and savings.*/
+
+function fiftyThirtyTwenty(ati) {
+  return { Needs: ati * 0.5, Wants: ati * 0.3, Savings: ati * 0.2 };
+}
+
+console.log(fiftyThirtyTwenty(10000));
