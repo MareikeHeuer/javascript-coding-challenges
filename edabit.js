@@ -29,7 +29,7 @@ console.log(evenOrOdd([1, 3, 4]));*/
 //// Minimal VI: Ternary Operator
 /*Refactor the following code*/
 
-f; /*unction areTrue(a, b) {
+/*function areTrue(a, b) {
   if (a == true) {
     if (b == true) {
       return "both";
@@ -43,7 +43,15 @@ f; /*unction areTrue(a, b) {
   }
 }*/
 
-const areTrue = (a, b) =>
+/*const areTrue = (a, b) =>
   a && b ? "both" : a ? "first" : b ? "second" : "neither";
 
-console.log(areTrue(false, true));
+console.log(areTrue(false, true));*/
+
+//// STRING AND NUMBER CONVERSIONS
+/* You need to create two functions to substitute toString() and parseInt(); A function called intToString() that converts integers into strings and a function called stringToInt() that converts strings into integers.
+You will get bonus points if you manage to solve this without using toString, parseInt or parseFloat.*/
+
+const [intToString, stringToInt] = [String, Number];
+
+console.log(intToString(4), stringToInt("2"));
