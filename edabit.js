@@ -61,8 +61,14 @@ console.log(intToString(4), stringToInt("2"));*/
 
 Given the after-tax income as ati, what you are supposed to do is to make a function that will return an object that shows how much a person needs to spend on needs, wants, and savings.*/
 
-function fiftyThirtyTwenty(ati) {
+/*function fiftyThirtyTwenty(ati) {
   return { Needs: ati * 0.5, Wants: ati * 0.3, Savings: ati * 0.2 };
 }
 
-console.log(fiftyThirtyTwenty(10000));
+console.log(fiftyThirtyTwenty(10000));*/
+
+//// VOLUME OF A BOX
+/*Create a function that takes an object argument sizes (contains width, length, height keys) and returns the volume of the box.*/
+const volumeOfBox = ({ width, length, height }) => width * length * height;
+
+console.log(volumeOfBox({ width: 11, length: 1, height: 2 }));
