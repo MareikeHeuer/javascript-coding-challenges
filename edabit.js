@@ -78,5 +78,30 @@ console.log(volumeOfBox({ width: 11, length: 1, height: 2 }));
 /*You have been given a fraction of an ounce but you need to convert it to grams. Given an ounce weighs 28.3495 grams, convert the amount of ounces to grams. Round the number of grams to one decimal place.
 Add the string "grams" to the end with a space.*/
 
-const convert = (num) => `${(num * 28.3495).toFixed(1)} grams`;
-console.log(convert(0.0003527396));
+/*const convert = (num) => `${(num * 28.3495).toFixed(1)} grams`;
+console.log(convert(0.0003527396));*/
+
+//// A DAY AT THE MARKET
+/*Backpack Bill and Wallet Will set off for the annual festival. As they approach the stalls, Bill retorts that he'll be able to bring home more stuff than Will. Taking this as a challenge, Will refutes and a competition spurs into action.
+
+Backpack Bill has an infinite inventory space, but a limited number of coins.
+Wallet Will has an infinite number of coins, but a limited inventory space.
+Create a function that returns the name of the man who can bring home the most items. The parameters are given as follows:
+
+Bill's amount of money.
+Will's amount of inventory space.
+The item's price.
+The item's size.*/
+
+function whoWinsTonight(coins, space, price, size) {
+  const bill = Math.floor(coins / price);
+  const will = Math.floor(space / size);
+
+  if (bill === will) {
+    return "Tie";
+  }
+
+  return bill > will ? "Bill" : "Will";
+}
+
+console.log(whoWinsTonight(20, 20, 5, 10));
