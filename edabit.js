@@ -69,6 +69,14 @@ console.log(fiftyThirtyTwenty(10000));*/
 
 //// VOLUME OF A BOX
 /*Create a function that takes an object argument sizes (contains width, length, height keys) and returns the volume of the box.*/
-const volumeOfBox = ({ width, length, height }) => width * length * height;
+/*const volumeOfBox = ({ width, length, height }) => width * length * height;
 
 console.log(volumeOfBox({ width: 11, length: 1, height: 2 }));
+*/
+
+//// WEIGHT CONVERTOR
+/*You have been given a fraction of an ounce but you need to convert it to grams. Given an ounce weighs 28.3495 grams, convert the amount of ounces to grams. Round the number of grams to one decimal place.
+Add the string "grams" to the end with a space.*/
+
+const convert = (num) => `${(num * 28.3495).toFixed(1)} grams`;
+console.log(convert(0.0003527396));
