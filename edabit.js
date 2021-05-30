@@ -109,7 +109,12 @@ console.log(whoWinsTonight(20, 20, 5, 10));*/
 //// LESS THAN, GREATER THAN
 /*Create a function that takes two numbers num1, num2, and an array arr and returns an array containing all the numbers in arr greater than num1 and less than num2.*/
 
-const arrBetween = (num1, num2, arr) =>
+/*const arrBetween = (num1, num2, arr) =>
   arr.filter((num) => num > num1 && num < num2);
 
-console.log(arrBetween(0, 9, [1, 2, 3, 78]));
+console.log(arrBetween(0, 9, [1, 2, 3, 78]));*/
+
+//// RETURN TOTAL NUMBERS OF PAREMETERS
+const numberArgs = (...args) => args.length;
+
+console.log(numberArgs(2, 3, 4));
