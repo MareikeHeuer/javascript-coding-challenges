@@ -129,7 +129,7 @@ console.log(frontThree("Python"));*/
 //// WORD NUMBERS
 /*Create a function that returns a number, based on the string provided. */
 
-word = (s) =>
+/*word = (s) =>
   [
     "zero",
     "one",
@@ -143,4 +143,13 @@ word = (s) =>
     "nine",
   ].indexOf(s);
 
-console.log(word("eight"));
+console.log(word("eight"));*/
+
+//// TAXI JOURNEY
+/*A taxi journey costs $3 for the first kilometer travelled. However, all kilometers travelled after that will cost $2 each.
+
+Create a function which returns the distance that the taxi must've travelled, given the cost as a parameter.*/
+
+const journeyDistance = (n) => (n < 3 ? 0 : 1 + (n - 3) / 2);
+
+console.log(journeyDistance(3));
