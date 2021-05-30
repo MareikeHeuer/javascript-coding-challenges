@@ -93,7 +93,7 @@ Will's amount of inventory space.
 The item's price.
 The item's size.*/
 
-function whoWinsTonight(coins, space, price, size) {
+/*function whoWinsTonight(coins, space, price, size) {
   const bill = Math.floor(coins / price);
   const will = Math.floor(space / size);
 
@@ -104,4 +104,12 @@ function whoWinsTonight(coins, space, price, size) {
   return bill > will ? "Bill" : "Will";
 }
 
-console.log(whoWinsTonight(20, 20, 5, 10));
+console.log(whoWinsTonight(20, 20, 5, 10));*/
+
+//// LESS THAN, GREATER THAN
+/*Create a function that takes two numbers num1, num2, and an array arr and returns an array containing all the numbers in arr greater than num1 and less than num2.*/
+
+const arrBetween = (num1, num2, arr) =>
+  arr.filter((num) => num > num1 && num < num2);
+
+console.log(arrBetween(0, 9, [1, 2, 3, 78]));
