@@ -122,6 +122,25 @@ console.log(numberArgs(2, 3, 4));*/
 //// FRONT 3 - SLICE CHECK REPEAT CONCATENATE
 /*Create a function that takes a string; we'll say that the front is the first three characters of the string. If the string length is less than three characters, the front is whatever is there. Return a new string, which is three copies of the front.*/
 
-const frontThree = (str) => str.slice(0, 3).repeat(3);
+/*const frontThree = (str) => str.slice(0, 3).repeat(3);
 
-console.log(frontThree("Python"));
+console.log(frontThree("Python"));*/
+
+//// WORD NUMBERS
+/*Create a function that returns a number, based on the string provided. */
+
+word = (s) =>
+  [
+    "zero",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+  ].indexOf(s);
+
+console.log(word("eight"));
