@@ -150,6 +150,22 @@ console.log(word("eight"));*/
 
 Create a function which returns the distance that the taxi must've travelled, given the cost as a parameter.*/
 
-const journeyDistance = (n) => (n < 3 ? 0 : 1 + (n - 3) / 2);
+/*const journeyDistance = (n) => (n < 3 ? 0 : 1 + (n - 3) / 2);
 
-console.log(journeyDistance(3));
+console.log(journeyDistance(3));*/
+
+//// EXTRACT CITY FACTS
+
+/*Create a function that takes an object as an argument and returns a string with facts about the city. The city facts will need to be extracted from the object's three properties:
+
+name
+population
+continent
+The string should have the following format: X has a population of Y and is situated in Z (where X is the city name, Y is the population and Z is the continent the city is situated in).*/
+
+const cityFacts = (city) =>
+  `${city.name} has a population of ${city.population} and is situated in ${city.continent}`;
+
+console.log(
+  cityFacts({ name: "Manila", population: "1,780,148", continent: "Asia" })
+);
