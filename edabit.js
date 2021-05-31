@@ -174,7 +174,7 @@ console.log(
 /*Create a function that takes a number n and returns the first 10 multiples of n with 1 added to it, separated by commas.*/
 
 function nTablesPlusOne(n) {
-  const result = [];
+  let result = [];
   for (let i = 1; i <= 10; i++) {
     result.push(n * i + 1);
   }
