@@ -173,7 +173,7 @@ console.log(
 //// N TABLES + 1
 /*Create a function that takes a number n and returns the first 10 multiples of n with 1 added to it, separated by commas.*/
 
-function nTablesPlusOne(n) {
+/*function nTablesPlusOne(n) {
   const result = [];
   for (let i = 1; i <= 10; i++) {
     result.push(n * i + 1);
@@ -181,4 +181,17 @@ function nTablesPlusOne(n) {
   return result.toString();
 }
 
-console.log(nTablesPlusOne(1));
+console.log(nTablesPlusOne(1));*/
+
+//// ARRAY FROM A RANGE OF NUMBERS
+/*Create a function that returns an array of all the integers between two given numbers start and end.*/
+
+const rangeOfNum = function (start, end) {
+  var arr = [];
+  for (let i = start + 1; i < end; i++) {
+    arr.push(i);
+  }
+  return arr;
+};
+
+console.log(rangeOfNum(2, 8));
