@@ -173,7 +173,7 @@ console.log(
 //// N TABLES + 1
 /*Create a function that takes a number n and returns the first 10 multiples of n with 1 added to it, separated by commas.*/
 
-function nTablesPlusOne(n) {
+/*function nTablesPlusOne(n) {
   let result = [];
   for (let i = 1; i <= 10; i++) {
     result.push(n * i + 1);
@@ -181,4 +181,19 @@ function nTablesPlusOne(n) {
   return result.toString();
 }
 
-console.log(nTablesPlusOne(1));
+console.log(nTablesPlusOne(1));*/
+
+//// RETURN THE RELATION
+/*Luke Skywalker has family and friends. Help him remind them who is who. Given a string with a name, return the relation of that person to Luke.*/
+
+const relationToLuke = function (name) {
+  const relations = {
+    "Darth Vader": "father",
+    Leia: "sister",
+    Han: "brother in law",
+    R2D2: "droid",
+  };
+  return `Luke I am your ${relations[name]}`;
+};
+
+console.log(relationToLuke("Leia"));
