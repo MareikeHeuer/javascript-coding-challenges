@@ -163,9 +163,22 @@ population
 continent
 The string should have the following format: X has a population of Y and is situated in Z (where X is the city name, Y is the population and Z is the continent the city is situated in).*/
 
-const cityFacts = (city) =>
+/*const cityFacts = (city) =>
   `${city.name} has a population of ${city.population} and is situated in ${city.continent}`;
 
 console.log(
   cityFacts({ name: "Manila", population: "1,780,148", continent: "Asia" })
-);
+);*/
+
+//// N TABLES + 1
+/*Create a function that takes a number n and returns the first 10 multiples of n with 1 added to it, separated by commas.*/
+
+function nTablesPlusOne(n) {
+  const result = [];
+  for (let i = 1; i <= 10; i++) {
+    result.push(n * i + 1);
+  }
+  return result.toString();
+}
+
+console.log(nTablesPlusOne(1));
