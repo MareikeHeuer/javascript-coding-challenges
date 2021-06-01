@@ -186,7 +186,7 @@ console.log(nTablesPlusOne(1));*/
 //// RETURN THE RELATION
 /*Luke Skywalker has family and friends. Help him remind them who is who. Given a string with a name, return the relation of that person to Luke.*/
 
-const relationToLuke = function (name) {
+/*const relationToLuke = function (name) {
   const relations = {
     "Darth Vader": "father",
     Leia: "sister",
@@ -196,4 +196,10 @@ const relationToLuke = function (name) {
   return `Luke I am your ${relations[name]}`;
 };
 
-console.log(relationToLuke("Leia"));
+console.log(relationToLuke("Leia"));*/
+
+//// CONCATENATING FIRST AND LAST CHARACTER OF A STRING
+/*Creates a function that takes a string and returns the concatenated first and last character.*/
+const firstLast = (n) => n[0] + n.slice(-1);
+
+console.log(firstLast("Ganesh"));
