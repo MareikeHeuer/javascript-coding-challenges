@@ -207,6 +207,14 @@ console.log(firstLast("Ganesh"));*/
 //// STUTTERING FUNCTION
 /*Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.*/
 
-const stutter = (word) => `${`${word.slice(0, 2)}... `.repeat(2)}${word}?`;
+/*const stutter = (word) => `${`${word.slice(0, 2)}... `.repeat(2)}${word}?`;
 
-console.log(stutter("hello"));
+console.log(stutter("hello"));*/
+
+//// END CORONA
+/*Create a function that takes the number of daily average recovered cases recovers, daily average newCases, current activeCases, and returns the number of days it will take to reach zero cases.*/
+
+const endCorona = (recovers, newCases, activeCases) =>
+  Math.ceil(activeCases / (recovers - newCases));
+
+console.log(endCorona(4000, 2000, 77000));
