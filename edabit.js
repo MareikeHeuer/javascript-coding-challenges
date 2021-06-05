@@ -200,6 +200,13 @@ console.log(relationToLuke("Leia"));*/
 
 //// CONCATENATING FIRST AND LAST CHARACTER OF A STRING
 /*Creates a function that takes a string and returns the concatenated first and last character.*/
-const firstLast = (n) => n[0] + n.slice(-1);
+/*const firstLast = (n) => n[0] + n.slice(-1);
 
-console.log(firstLast("Ganesh"));
+console.log(firstLast("Ganesh"));*/
+
+//// STUTTERING FUNCTION
+/*Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.*/
+
+const stutter = (word) => `${`${word.slice(0, 2)}... `.repeat(2)}${word}?`;
+
+console.log(stutter("hello"));
