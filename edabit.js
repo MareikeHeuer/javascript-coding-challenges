@@ -220,6 +220,14 @@ console.log(stutter("hello"));*/
 //// CONVERT ALL ARRAY ITEMS TO STRINGS
 /*Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.*/
 
-const parseArray = (arr) => arr.map((x) => x.toString());
+/*const parseArray = (arr) => arr.map((x) => x.toString());
 
-console.log(parseArray([1, 2, "a", "b"]));
+console.log(parseArray([1, 2, "a", "b"]));'/
+
+
+//// IS THE WORD SINGULAT OR PLURAL?
+/*Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".*/
+
+const isPlural = (word) => word.endsWith("s");
+
+console.log(isPlural("flowers"));
