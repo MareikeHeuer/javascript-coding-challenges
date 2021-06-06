@@ -214,7 +214,12 @@ console.log(stutter("hello"));*/
 //// END CORONA
 /*Create a function that takes the number of daily average recovered cases recovers, daily average newCases, current activeCases, and returns the number of days it will take to reach zero cases.*/
 
-const endCorona = (recovers, newCases, activeCases) =>
-  Math.ceil(activeCases / (recovers - newCases));
+/*const endCorona = (recovers, newCases, activeCases) =>
+  Math.ceil(activeCases / (recovers - newCases));*/
 
-console.log(endCorona(4000, 2000, 77000));
+//// CONVERT ALL ARRAY ITEMS TO STRINGS
+/*Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.*/
+
+const parseArray = (arr) => arr.map((x) => x.toString());
+
+console.log(parseArray([1, 2, "a", "b"]));
