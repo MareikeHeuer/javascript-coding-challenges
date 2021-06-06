@@ -225,9 +225,17 @@ console.log(stutter("hello"));*/
 console.log(parseArray([1, 2, "a", "b"]));'/
 
 
-//// IS THE WORD SINGULAT OR PLURAL?
+//// IS THE WORD SINGULAR OR PLURAL?
 /*Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".*/
 
-const isPlural = (word) => word.endsWith("s");
+/*const isPlural = (word) => word.endsWith("s");
 
-console.log(isPlural("flowers"));
+console.log(isPlural("flowers"));*/
+
+//// SUM GREATER THAN FIVE
+/*Write a function that returns the sum of elements greater than 5, in the given array*/
+
+const sumFive = (arr) => arr.reduce((a, b) => (b > 5 ? a + b : a), 0);
+
+console.log(sumFive([1, 5, 20, 30, 4, 9, 18]));
+console.log(sumFive([1, 2, 3, 4]));
