@@ -251,6 +251,18 @@ console.log(fifth("a", 2, 3, 4, 5));*/
 
 /*Create a function which takes a number and returns the maximum value by rearranging its digits.*/
 
-const rotateMaxNumber = (num) =>
+/*const rotateMaxNumber = (num) =>
   parseInt(num.toString().split("").sort().reverse().join(""));
-console.log(rotateMaxNumber(123));
+
+  console.log(rotateMaxNumber(123));*/
+
+//// DIFFERENCE OF VOLUMES OF CUBOIDS
+
+function findDifference(a, b) {
+  return Math.abs(
+    a.reduce((previous, current) => previous * current) -
+      b.reduce((previous, current) => previous * current)
+  );
+}
+
+console.log(findDifference([28, 16, 29], [7, 8, 17]));
