@@ -242,7 +242,15 @@ console.log(sumFive([1, 2, 3, 4]));*/
 
 //// THE FIFTH ARGUMENT
 /*Create a function that has some arguments and returns the type of the fifth argument. In case the arguments were less than 5, return "Not enough arguments".*/
-const fifth = (...args) =>
+/*const fifth = (...args) =>
   args.length < 5 ? "Not enough arguments" : typeof args[4];
 
-console.log(fifth("a", 2, 3, 4, 5));
+console.log(fifth("a", 2, 3, 4, 5));*/
+
+//// ROTATE FOR MAX NUMBER
+
+/*Create a function which takes a number and returns the maximum value by rearranging its digits.*/
+
+const rotateMaxNumber = (num) =>
+  parseInt(num.toString().split("").sort().reverse().join(""));
+console.log(rotateMaxNumber(123));
