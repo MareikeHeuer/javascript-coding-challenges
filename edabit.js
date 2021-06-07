@@ -235,7 +235,14 @@ console.log(isPlural("flowers"));*/
 //// SUM GREATER THAN FIVE
 /*Write a function that returns the sum of elements greater than 5, in the given array*/
 
-const sumFive = (arr) => arr.reduce((a, b) => (b > 5 ? a + b : a), 0);
+/*const sumFive = (arr) => arr.reduce((a, b) => (b > 5 ? a + b : a), 0);
 
 console.log(sumFive([1, 5, 20, 30, 4, 9, 18]));
-console.log(sumFive([1, 2, 3, 4]));
+console.log(sumFive([1, 2, 3, 4]));*/
+
+//// THE FIFTH ARGUMENT
+/*Create a function that has some arguments and returns the type of the fifth argument. In case the arguments were less than 5, return "Not enough arguments".*/
+const fifth = (...args) =>
+  args.length < 5 ? "Not enough arguments" : typeof args[4];
+
+console.log(fifth("a", 2, 3, 4, 5));
