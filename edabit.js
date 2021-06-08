@@ -258,11 +258,17 @@ console.log(fifth("a", 2, 3, 4, 5));*/
 
 //// DIFFERENCE OF VOLUMES OF CUBOIDS
 
-function findDifference(a, b) {
+/*function findDifference(a, b) {
   return Math.abs(
     a.reduce((previous, current) => previous * current) -
       b.reduce((previous, current) => previous * current)
   );
 }
 
-console.log(findDifference([28, 16, 29], [7, 8, 17]));
+console.log(findDifference([28, 16, 29], [7, 8, 17]));*/
+
+//// INVERT COLORS
+/*Create a function that inverts the rgb values of a given tuple.*/
+
+const colorInvert = (rgb) => rgb.map((x) => 255 - x);
+console.log(colorInvert([165, 170, 119]), [90, 85, 136]);
