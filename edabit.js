@@ -276,6 +276,41 @@ console.log(colorInvert([165, 170, 119]), [90, 85, 136]);*/
 //// DEFAULT MOOD
 /*Create a function that takes in a current mood and return a sentence in the following format: "Today, I am feeling {mood}". However, if no argument is passed, return "Today, I am feeling neutral".*/
 
-const moodToday = (mood) => `Today, I am feeling ${mood || "neutral"}`;
+/*const moodToday = (mood) => `Today, I am feeling ${mood || "neutral"}`;
 
-console.log(moodToday("happy"));
+console.log(moodToday("happy"));*/
+
+//// FIND THE BUG: RETURNING THE CONTAINER
+
+/*The packaging system is running wild! The candy is lying loose all over in the warehouse, the cereal is missing, and bread is stuffed in a bottle. What is going on here? The candy should be in plastic and the bread should be in a bag.
+
+The packaging machine is running the getContainer() function to retrieve the container of a product. But something is not right...*/
+
+const getContainer = function (product) {
+  let container;
+  switch (product) {
+    case "Bread":
+      container = "bag";
+      break;
+    case "Beer":
+      container = "bottle";
+      break;
+    case "Milk":
+      container = "bottle";
+      break;
+    case "Cheese":
+      container = null;
+      break;
+    case "Eggs":
+      container = "carton";
+      break;
+    case "Candy":
+      container = "plastic";
+    default:
+      container = null;
+  }
+
+  return container;
+};
+
+console.log(getContainer("Milk"));
