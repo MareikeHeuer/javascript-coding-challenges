@@ -306,6 +306,7 @@ const getContainer = function (product) {
       break;
     case "Candy":
       container = "plastic";
+      break;
     default:
       container = null;
   }
