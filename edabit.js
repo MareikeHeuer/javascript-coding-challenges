@@ -319,6 +319,16 @@ console.log(getContainer("Milk"));*/
 //// SQUARES AND CUBES
 /*Create a function that takes an array of two numbers and checks if the square root of the first number is equal to the cube root of the second number.*/
 
-const checkSquareAndCube = ([a, b]) => Math.sqrt(a) === Math.cbrt(b);
+/*const checkSquareAndCube = ([a, b]) => Math.sqrt(a) === Math.cbrt(b);
 
-console.log(checkSquareAndCube([4, 8]));
+console.log(checkSquareAndCube([4, 8]));*/
+
+//// MAXIMUM WEIGHT ALLOWED
+/*Create a function that returns true if the combined weight of a car car and the weight of the passengers p in the car is less than the maximum weight maxWeight the car is allowed to carry. Otherwise, return false. The weight of the car and the weight of the passengers are given in pounds. The maximum weight is given in kilograms.*/
+
+function weightAllowed(car, p, maxWeight) {
+  const passengers = p.reduce((acc, v) => acc + v, 0);
+  return (car + passengers) * 0.453592 < maxWeight;
+}
+
+console.log(weightAllowed(3000, [150, 201, 75, 88, 195], 1700));
