@@ -270,5 +270,12 @@ console.log(findDifference([28, 16, 29], [7, 8, 17]));*/
 //// INVERT COLORS
 /*Create a function that inverts the rgb values of a given tuple.*/
 
-const colorInvert = (rgb) => rgb.map((x) => 255 - x);
-console.log(colorInvert([165, 170, 119]), [90, 85, 136]);
+/*const colorInvert = (rgb) => rgb.map((x) => 255 - x);
+console.log(colorInvert([165, 170, 119]), [90, 85, 136]);*/
+
+//// DEFAULT MOOD
+/*Create a function that takes in a current mood and return a sentence in the following format: "Today, I am feeling {mood}". However, if no argument is passed, return "Today, I am feeling neutral".*/
+
+const moodToday = (mood) => `Today, I am feeling ${mood || "neutral"}`;
+
+console.log(moodToday("happy"));
