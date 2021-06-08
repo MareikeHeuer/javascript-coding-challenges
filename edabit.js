@@ -286,7 +286,7 @@ console.log(moodToday("happy"));*/
 
 The packaging machine is running the getContainer() function to retrieve the container of a product. But something is not right...*/
 
-const getContainer = function (product) {
+/*const getContainer = function (product) {
   let container;
   switch (product) {
     case "Bread":
@@ -314,4 +314,11 @@ const getContainer = function (product) {
   return container;
 };
 
-console.log(getContainer("Milk"));
+console.log(getContainer("Milk"));*/
+
+//// SQUARES AND CUBES
+/*Create a function that takes an array of two numbers and checks if the square root of the first number is equal to the cube root of the second number.*/
+
+const checkSquareAndCube = ([a, b]) => Math.sqrt(a) === Math.cbrt(b);
+
+console.log(checkSquareAndCube([4, 8]));
