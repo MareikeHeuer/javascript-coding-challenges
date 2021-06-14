@@ -326,9 +326,19 @@ console.log(checkSquareAndCube([4, 8]));*/
 //// MAXIMUM WEIGHT ALLOWED
 /*Create a function that returns true if the combined weight of a car car and the weight of the passengers p in the car is less than the maximum weight maxWeight the car is allowed to carry. Otherwise, return false. The weight of the car and the weight of the passengers are given in pounds. The maximum weight is given in kilograms.*/
 
-function weightAllowed(car, p, maxWeight) {
+/*function weightAllowed(car, p, maxWeight) {
   const passengers = p.reduce((acc, v) => acc + v, 0);
   return (car + passengers) * 0.453592 < maxWeight;
 }
 
-console.log(weightAllowed(3000, [150, 201, 75, 88, 195], 1700));
+console.log(weightAllowed(3000, [150, 201, 75, 88, 195], 1700));*/
+
+////A SIMPLE TASK
+
+/*Create a function that takes a number n and return its decimal part.*/
+
+function decimalPart(n) {
+  return Math.abs(n) % 1;
+}
+
+console.log(33.4);
