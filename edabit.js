@@ -337,8 +337,16 @@ console.log(weightAllowed(3000, [150, 201, 75, 88, 195], 1700));*/
 
 /*Create a function that takes a number n and return its decimal part.*/
 
-function decimalPart(n) {
+/*function decimalPart(n) {
   return Math.abs(n) % 1;
 }
 
-console.log(33.4);
+console.log(33.4);*/
+
+//// DESTRUCTURING ASSIGNMENT
+
+/*Using Destructuring Assignment (check the Resources tab), your task is to unpack the array writeyourcodehere into three variables, first, a variable to ignore all middle values and last.*/
+
+const [first, , , , , , , last] = [1, 2, 3, 4, 5, 6, 7, 8];
+
+console.log(first, last);
