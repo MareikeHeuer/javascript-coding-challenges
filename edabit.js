@@ -347,6 +347,43 @@ console.log(33.4);*/
 
 /*Using Destructuring Assignment (check the Resources tab), your task is to unpack the array writeyourcodehere into three variables, first, a variable to ignore all middle values and last.*/
 
-const [first, , , , , , , last] = [1, 2, 3, 4, 5, 6, 7, 8];
+/*const [first, , , , , , , last] = [1, 2, 3, 4, 5, 6, 7, 8];
 
-console.log(first, last);
+console.log(first, last);*/
+
+//// LEVEL 5 ////
+
+////  CLASSES FOR FETCHING INFORMATION
+
+/*Create a class that takes the following four arguments for a particular football player:
+
+name
+age
+height
+weight
+Also, create three functions for the class that returns the following strings:
+
+getAge() returns "name is age age"
+getHeight() returns "name is heightcm"
+getWeight() returns "name weighs weightkg"*/
+
+/*Test.assertEquals(player1.getAge(), 'Patrick Mahomes is age 24')*/
+
+class Player {
+  constructor(name, age, height, weight) {
+    this.name = name;
+    this.age = age;
+    this.height = height;
+    this.weight = weight;
+  }
+
+  getAge = () => `${this.name} is age ${this.age}`;
+  getHeight = () => `${this.name} is ${this.height}cm`;
+  getWeight = () => `${this.name} weighs ${this.weight}kg`;
+}
+
+player1 = new Player("Patrick Mahomes", 24, 188, 104);
+
+console.log(player1.getAge());
+console.log(player1.getHeight());
+console.log(player1.getWeight());
