@@ -369,7 +369,7 @@ getWeight() returns "name weighs weightkg"*/
 
 /*Test.assertEquals(player1.getAge(), 'Patrick Mahomes is age 24')*/
 
-class Player {
+/*class Player {
   constructor(name, age, height, weight) {
     this.name = name;
     this.age = age;
@@ -386,4 +386,13 @@ player1 = new Player("Patrick Mahomes", 24, 188, 104);
 
 console.log(player1.getAge());
 console.log(player1.getHeight());
-console.log(player1.getWeight());
+console.log(player1.getWeight());*/
+
+//// WORDCHARWORD
+
+/*Create a function that will put the first argument, a character, between every word in the second argument, a string.
+Test.assertEquals(add("#", "hello world"), "hello#world")*/
+
+const add = (char, str) => str.split(" ").join(char);
+
+console.log(add("#", "Hello World"));
