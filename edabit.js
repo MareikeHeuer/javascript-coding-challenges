@@ -393,6 +393,16 @@ console.log(player1.getWeight());*/
 /*Create a function that will put the first argument, a character, between every word in the second argument, a string.
 Test.assertEquals(add("#", "hello world"), "hello#world")*/
 
-const add = (char, str) => str.split(" ").join(char);
+/*const add = (char, str) => str.split(" ").join(char);
 
-console.log(add("#", "Hello World"));
+console.log(add("#", "Hello World"));*.
+
+
+//// INVERT AN ARRAY
+/*Create a function that takes an array of numbers arr and returns an inverted array.
+
+Test.assertSimilar(invertArray([1, 2, 3, 4, 5]), [-1, -2, -3, -4, -5])*/
+
+const invertArray = (arr) => arr.map((num) => (num != 0 ? -num : 0));
+
+console.log(invertArray([1, -2, 3, -4, 5]));
