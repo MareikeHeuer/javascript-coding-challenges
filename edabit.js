@@ -403,6 +403,16 @@ console.log(add("#", "Hello World"));*.
 
 Test.assertSimilar(invertArray([1, 2, 3, 4, 5]), [-1, -2, -3, -4, -5])*/
 
-const invertArray = (arr) => arr.map((num) => (num != 0 ? -num : 0));
+/*const invertArray = (arr) => arr.map((num) => (num != 0 ? -num : 0));
 
-console.log(invertArray([1, -2, 3, -4, 5]));
+console.log(invertArray([1, -2, 3, -4, 5]));*/
+
+//// AMAZING EDABIT
+/*Create a function that takes a string and changes the word amazing to not amazing. Return the string without any change if the word edabit is part of the string.
+
+Test.assertEquals(amazingEdabit("edabit is amazing."), "edabit is amazing.")*/
+
+const amazingEdabit = (str) =>
+  str.includes("edabit") ? str : str.replace("amazing", "not amazing");
+
+console.log(amazingEdabit("edabit is amazing."));
