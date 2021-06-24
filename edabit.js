@@ -441,8 +441,16 @@ Test.assertEquals(sumCubes(3), 36)*/
 
 console.log(sumCubes(3));*/
 
-//// Reverse String
+//// REVERSE STRING
 // Test.assertEquals(sortWord("dcba"), "abcd")
 
-const sortWord = (word) => word.split("").sort().join("");
-console.log(sortWord("dcba"));
+/*const sortWord = (word) => word.split("").sort().join("");
+console.log(sortWord("dcba"));*/
+
+//// COUNT THE SYLLABLES
+/*Create a function that returns the number of syllables in a simple string. The string is made up of short repeated words like "Lalalalalalala" (which would have 7 syllables).
+Test.assertEquals(countSyllables("Hehehehehehe"), 6)*/
+
+const countSyllables = (str) => str.length / 2;
+
+console.log(countSyllables("Hehehehehehe"));
