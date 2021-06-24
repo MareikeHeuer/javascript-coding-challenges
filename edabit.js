@@ -412,7 +412,16 @@ console.log(invertArray([1, -2, 3, -4, 5]));*/
 
 Test.assertEquals(amazingEdabit("edabit is amazing."), "edabit is amazing.")*/
 
-const amazingEdabit = (str) =>
+/*const amazingEdabit = (str) =>
   str.includes("edabit") ? str : str.replace("amazing", "not amazing");
 
-console.log(amazingEdabit("edabit is amazing."));
+console.log(amazingEdabit("edabit is amazing."));*/
+
+//// RECREATING THE STRING.LENGTH PROPERTY
+/* Create a function which returns the length of a string WITHOUT using string.length*/
+
+function length(s) {
+  return s.lastIndexOf("");
+}
+
+console.log(length("Hello World"));
