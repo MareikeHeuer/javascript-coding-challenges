@@ -420,8 +420,23 @@ console.log(amazingEdabit("edabit is amazing."));*/
 //// RECREATING THE STRING.LENGTH PROPERTY
 /* Create a function which returns the length of a string WITHOUT using string.length*/
 
-function length(s) {
+/*function length(s) {
   return s.lastIndexOf("");
 }
 
-console.log(length("Hello World"));
+console.log(length("Hello World"));*/
+
+//// SUM OF CUBES
+/*Create a function that takes a positive integer n, and returns the sum of all the cubed values from 1 to n.
+
+Test.assertEquals(sumCubes(3), 36)*/
+
+function sumCubes(n) {
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    total += i ** 3;
+  }
+  return total;
+}
+
+console.log(sumCubes(3));
