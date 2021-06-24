@@ -431,7 +431,7 @@ console.log(length("Hello World"));*/
 
 Test.assertEquals(sumCubes(3), 36)*/
 
-function sumCubes(n) {
+/*function sumCubes(n) {
   let total = 0;
   for (let i = 1; i <= n; i++) {
     total += i ** 3;
@@ -439,4 +439,10 @@ function sumCubes(n) {
   return total;
 }
 
-console.log(sumCubes(3));
+console.log(sumCubes(3));*/
+
+//// Reverse String
+// Test.assertEquals(sortWord("dcba"), "abcd")
+
+const sortWord = (word) => word.split("").sort().join("");
+console.log(sortWord("dcba"));
