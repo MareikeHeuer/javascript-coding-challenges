@@ -468,6 +468,22 @@ console.log(match("hello", "hELLo"));*/
 /*Create a function which validates whether a given number exists, and could represent a real life quantity. Inputs will be given as a string.
 Test.assertEquals(validStrNumber("3.2"), true)*/
 
-const validStrNumber = (n) => (isNaN(n) ? false : true);
+/*const validStrNumber = (n) => (isNaN(n) ? false : true);
 
-console.log(validStrNumber("3.2"));
+console.log(validStrNumber("3.2"));*/
+
+//// CLEANING UP MESSY ARRAYS
+/*Create a function that takes an array. This array will contain numbers represented as strings.
+
+Your function should split this array into two new arrays. The first array should contain only even numbers. The second only odd. Then, wrap these two arrays in one main array and return it.
+
+Return an empty array if there are no even numbers, or odd.
+Test.assertSimilar(cleanUpArray(['9', '4', '5', '8']), [[4, 8], [9, 5]])*/
+
+const cleanUpArray = (arr) => {
+  const even = arr.map(Number).filter((num) => num % 2 === 0);
+  const odd = arr.map(Number).filter((num) => num % 2 === 1);
+  return [even, odd];
+};
+
+console.log(cleanUpArray(["9", "4", "5", "8"]));
