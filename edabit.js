@@ -460,6 +460,14 @@ console.log(countSyllables("Hehehehehehe"));'/
 /*Write a function that validates whether two strings are identical. Make it case insensitive.
 Test.assertEquals(match("hello", "hELLo"), true)*/
 
-const match = (s1, s2) => s1.toUpperCase() === s2.toUpperCase();
+/*const match = (s1, s2) => s1.toUpperCase() === s2.toUpperCase();
 
-console.log(match("hello", "hELLo"));
+console.log(match("hello", "hELLo"));*/
+
+//// DOES A NUMBER EXIST?
+/*Create a function which validates whether a given number exists, and could represent a real life quantity. Inputs will be given as a string.
+Test.assertEquals(validStrNumber("3.2"), true)*/
+
+const validStrNumber = (n) => (isNaN(n) ? false : true);
+
+console.log(validStrNumber("3.2"));
