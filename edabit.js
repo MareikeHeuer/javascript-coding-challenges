@@ -451,6 +451,15 @@ console.log(sortWord("dcba"));*/
 /*Create a function that returns the number of syllables in a simple string. The string is made up of short repeated words like "Lalalalalalala" (which would have 7 syllables).
 Test.assertEquals(countSyllables("Hehehehehehe"), 6)*/
 
-const countSyllables = (str) => str.length / 2;
+/*const countSyllables = (str) => str.length / 2;
 
-console.log(countSyllables("Hehehehehehe"));
+console.log(countSyllables("Hehehehehehe"));'/
+
+
+//// CASE INSENSITIVE COMPARISON
+/*Write a function that validates whether two strings are identical. Make it case insensitive.
+Test.assertEquals(match("hello", "hELLo"), true)*/
+
+const match = (s1, s2) => s1.toUpperCase() === s2.toUpperCase();
+
+console.log(match("hello", "hELLo"));
