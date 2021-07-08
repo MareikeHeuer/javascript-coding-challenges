@@ -545,9 +545,18 @@ console.log(damage(40, 5, "second"));*/
 /*Create a function that will return a four-character ID using the person's first name and last name. The first character will be the first letter of the first name but in lowercase. The next three characters will be the first three characters of the last name, but the first letter will be capitalized and the other two will be in lower case.
 createID("mary", "lamb") ➞ "mLam"*/
 
-const createID = (firstName, lastName) =>
+/*const createID = (firstName, lastName) =>
   firstName[0].toLowerCase() +
   lastName[0].toUpperCase() +
   lastName.slice(1, 3).toLowerCase();
 
-console.log(createID("Mary", "lamb"));
+console.log(createID("Mary", "lamb"));*/
+
+//// STRING OR INTEGER?
+/*Create a function that checks if the argument is an integer or a string. Return "int" if it's an integer and "str" if it's a string.
+Test.assertEquals(intOrString(1), "int")
+Test.assertEquals(intOrString("HELLO"), "str")*/
+
+const intOrString = (param) => (typeof param === "string" ? "str" : "int");
+
+console.log(intOrString(2));
