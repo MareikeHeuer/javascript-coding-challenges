@@ -513,11 +513,30 @@ console.log(getMultipliedArr([2, 5, 3]));*/
 /*Create a function that takes an array of words and transforms it into an array of each word's length.
 Test.assertSimilar(wordLengths(["hello", "world"]), [5, 5], "Example #1")*/
 
-const wordLengths = (arr) => {
+/*const wordLengths = (arr) => {
   let newArr = [];
   for (i = 0; i < arr.length; i++) {
     newArr.push(arr[i].length);
   }
   return newArr;
 };
-console.log(wordLengths("hello", "world"));
+console.log(wordLengths("hello", "world"));*/
+
+//// CALCULATING DAMAGE
+/*Create a function that takes damage and speed (attacks per second) and returns the amount of damage after a given time.
+Test.assertEquals(damage(40, 5, "second"), 200)
+Test.assertEquals(damage(-23, 20, "second"), "invalid")*/
+
+const damage = function (damage, speed, time) {
+  if (speed < 0 || damage < 0) {
+    return "invalid";
+  }
+  return time === "second"
+    ? damage * speed
+    : time === "minute"
+    ? damage * (speed * 60)
+    : damage * (speed * 3600);
+};
+
+console.log(damage(-23, 20, "second"));
+console.log(damage(40, 5, "second"));
