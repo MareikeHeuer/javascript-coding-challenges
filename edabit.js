@@ -665,8 +665,23 @@ Test.assertEquals(totalCups(6), 7)
 Test.assertEquals(totalCups(3), 3)
 Test.assertEquals(totalCups(12), 14)*/
 
-const totalCups = (n) => n + Math.floor(n / 6);
+/*const totalCups = (n) => n + Math.floor(n / 6);
 
 console.log(totalCups(6));
 console.log(totalCups(3));
-console.log(totalCups(12));
+console.log(totalCups(12));*/
+
+//// TWO REGULAR EXPRESSION METHODS
+/*function twoMethods() {
+	// find and equals are not regular expression methods.  Replace them.
+	let methodOne = /hello/.find("hello")[0] === "hello"
+	let methodTwo = /hello/.equals("hello") // returns a boolean
+	return methodOne && methodTwo
+}*/
+
+function twoMethods() {
+  // find and equals are not regular expression methods.  Replace them.
+  let methodOne = /hello/.exec("hello")[0] === "hello";
+  let methodTwo = /hello/.test("hello"); // returns a boolean
+  return methodOne && methodTwo;
+}
