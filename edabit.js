@@ -612,9 +612,17 @@ console.log(nSidedShape(2));*/
 toInt() : A function to convert a string to an integer.
 toStr() : A function to convert an integer to a string.*/
 
-const toInt = (str) => parseInt(str);
+/*const toInt = (str) => parseInt(str);
 
 const toStr = (int) => int.toString();
 
 console.log(toInt("10"));
-console.log(toStr(10));
+console.log(toStr(10));*/
+
+//// Repeat letter in string
+/*Create a function that returns the string "Burp" with the amount of "r's" determined by the input parameters of the function.
+Test.assertEquals(longBurp(3), "Burrrp")*/
+
+const longBurp = (num) => `Bu${"r".repeat(num)}p`;
+
+console.log(longBurp(3));
