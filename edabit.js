@@ -527,16 +527,27 @@ console.log(wordLengths("hello", "world"));*/
 Test.assertEquals(damage(40, 5, "second"), 200)
 Test.assertEquals(damage(-23, 20, "second"), "invalid")*/
 
-const damage = function (damage, speed, time) {
+/*const damage = function (damage, speed, time) {
   if (speed < 0 || damage < 0) {
     return "invalid";
   }
-  return time === "second"
-    ? damage * speed
+  return time === "second" ?
+    damage * speed
     : time === "minute"
     ? damage * (speed * 60)
     : damage * (speed * 3600);
 };
 
 console.log(damage(-23, 20, "second"));
-console.log(damage(40, 5, "second"));
+console.log(damage(40, 5, "second"));*/
+
+//// Creating IDs
+/*Create a function that will return a four-character ID using the person's first name and last name. The first character will be the first letter of the first name but in lowercase. The next three characters will be the first three characters of the last name, but the first letter will be capitalized and the other two will be in lower case.
+createID("mary", "lamb") ➞ "mLam"*/
+
+const createID = (firstName, lastName) =>
+  firstName[0].toLowerCase() +
+  lastName[0].toUpperCase() +
+  lastName.slice(1, 3).toLowerCase();
+
+console.log(createID("Mary", "lamb"));
