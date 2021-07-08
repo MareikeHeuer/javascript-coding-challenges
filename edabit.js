@@ -505,6 +505,19 @@ console.log(halfQuarterEihgth(6));*/
 /*Create a function that takes an array with numbers and return an array with the elements multiplied by two.
  Test.assertSimilar(getMultipliedArr([2, 5, 3]), [4, 10, 6])*/
 
-const getMultipliedArr = (arr) => arr.map((num) => num * 2);
+/*const getMultipliedArr = (arr) => arr.map((num) => num * 2);
 
-console.log(getMultipliedArr([2, 5, 3]));
+console.log(getMultipliedArr([2, 5, 3]));*/
+
+//// ARRAY OF WORD LENGTHS
+/*Create a function that takes an array of words and transforms it into an array of each word's length.
+Test.assertSimilar(wordLengths(["hello", "world"]), [5, 5], "Example #1")*/
+
+const wordLengths = (arr) => {
+  let newArr = [];
+  for (i = 0; i < arr.length; i++) {
+    newArr.push(arr[i].length);
+  }
+  return newArr;
+};
+console.log(wordLengths("hello", "world"));
