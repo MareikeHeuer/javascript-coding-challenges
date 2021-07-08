@@ -588,7 +588,7 @@ Test.assertEquals(nSidedShape(1), "circle")
 Test.assertEquals(nSidedShape(2), "semi-circle")
 Test.assertEquals(nSidedShape(3), "triangle") etc. */
 
-const nSidedShape = function (n) {
+/*const nSidedShape = function (n) {
   let shapes = {
     1: "circle",
     2: "semi-circle",
@@ -604,4 +604,17 @@ const nSidedShape = function (n) {
   return shapes[n];
 };
 
-console.log(nSidedShape(2));
+console.log(nSidedShape(2));*/
+
+//// STRING TO INTEGER AND VICE VERSA
+
+/* Write 2 functions:
+toInt() : A function to convert a string to an integer.
+toStr() : A function to convert an integer to a string.*/
+
+const toInt = (str) => parseInt(str);
+
+const toStr = (int) => int.toString();
+
+console.log(toInt("10"));
+console.log(toStr(10));
