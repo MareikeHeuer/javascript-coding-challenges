@@ -557,6 +557,27 @@ console.log(createID("Mary", "lamb"));*/
 Test.assertEquals(intOrString(1), "int")
 Test.assertEquals(intOrString("HELLO"), "str")*/
 
-const intOrString = (param) => (typeof param === "string" ? "str" : "int");
+/*const intOrString = (param) => (typeof param === "string" ? "str" : "int");
 
-console.log(intOrString(2));
+console.log(intOrString(2));*/
+
+//// HELLO; HELLO WORLD; WORLD
+/*Write a function that takes an integer and:
+
+If the number is a multiple of 3, return "Hello".
+If the number is a multiple of 5, return "World".
+If the number is a multiple of both 3 and 5, return "Hello World".*/
+
+const helloWorld = function (num) {
+  return num % 15 === 0
+    ? "Hello World"
+    : num % 3 === 0
+    ? "Hello"
+    : num % 5 === 0
+    ? "World"
+    : null;
+};
+
+console.log(helloWorld(3));
+console.log(helloWorld(5));
+console.log(helloWorld(15));
