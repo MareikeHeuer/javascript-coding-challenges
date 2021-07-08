@@ -568,7 +568,7 @@ If the number is a multiple of 3, return "Hello".
 If the number is a multiple of 5, return "World".
 If the number is a multiple of both 3 and 5, return "Hello World".*/
 
-const helloWorld = function (num) {
+/*const helloWorld = function (num) {
   return num % 15 === 0
     ? "Hello World"
     : num % 3 === 0
@@ -580,4 +580,28 @@ const helloWorld = function (num) {
 
 console.log(helloWorld(3));
 console.log(helloWorld(5));
-console.log(helloWorld(15));
+console.log(helloWorld(15));*/
+
+//// SHAPES WITH N SIDES
+/*Create a function that takes a whole number as input and returns the shape with that number's amount of sides. Here are the expected outputs to get from these inputs.
+Test.assertEquals(nSidedShape(1), "circle")
+Test.assertEquals(nSidedShape(2), "semi-circle")
+Test.assertEquals(nSidedShape(3), "triangle") etc. */
+
+const nSidedShape = function (n) {
+  let shapes = {
+    1: "circle",
+    2: "semi-circle",
+    3: "triangle",
+    4: "square",
+    5: "pentagon",
+    6: "hexagon",
+    7: "heptagon",
+    8: "octagon",
+    9: "nonagon",
+    10: "decagon",
+  };
+  return shapes[n];
+};
+
+console.log(nSidedShape(2));
