@@ -655,6 +655,18 @@ console.log(trans4);*/
 Create a function that takes a string and returns a string.
 Test.assertEquals(toScottishScreaming("lorem ipsum"),"LEREM EPSEM")*/
 
-const toScottishScreaming = (s) => s.toUpperCase().replace(/[AIOU]/g, "E");
+/*const toScottishScreaming = (s) => s.toUpperCase().replace(/[AIOU]/g, "E");
 
-console.log(toScottishScreaming("lorem ipsum"));
+console.log(toScottishScreaming("lorem ipsum"));*/
+
+//// FREE COFFEE CUPS
+/*For each of the 6 coffee cups I buy, I get a 7th cup free. In total, I get 7 cups. Create a function that takes n cups bought and return as an integer the total number of cups I would get.
+Test.assertEquals(totalCups(6), 7)
+Test.assertEquals(totalCups(3), 3)
+Test.assertEquals(totalCups(12), 14)*/
+
+const totalCups = (n) => n + Math.floor(n / 6);
+
+console.log(totalCups(6));
+console.log(totalCups(3));
+console.log(totalCups(12));
