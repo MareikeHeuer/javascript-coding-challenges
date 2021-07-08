@@ -641,10 +641,20 @@ console.log(trans3) // should output "trains"
 console.log(trans4) // should output "motorcycles"
 */
 
-const arr = ["cars", "planes", ["trains", ["motorcycles"]]];
+/*const arr = ["cars", "planes", ["trains", ["motorcycles"]]];
 let [trans1, trans2, [trans3, [trans4]]] = arr;
 
 console.log(trans1);
 console.log(trans2);
 console.log(trans3);
-console.log(trans4);
+console.log(trans4);*/
+
+//// SCOTTISH SCREAMING
+/*A strong Scottish accent makes every vowel similar to an "e", so you should replace every vowel with an "e". Additionally, it is being screamed, so it should be in block capitals.
+
+Create a function that takes a string and returns a string.
+Test.assertEquals(toScottishScreaming("lorem ipsum"),"LEREM EPSEM")*/
+
+const toScottishScreaming = (s) => s.toUpperCase().replace(/[AIOU]/g, "E");
+
+console.log(toScottishScreaming("lorem ipsum"));
