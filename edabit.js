@@ -480,10 +480,23 @@ Your function should split this array into two new arrays. The first array shoul
 Return an empty array if there are no even numbers, or odd.
 Test.assertSimilar(cleanUpArray(['9', '4', '5', '8']), [[4, 8], [9, 5]])*/
 
-const cleanUpArray = (arr) => {
+/*const cleanUpArray = (arr) => {
   const even = arr.map(Number).filter((num) => num % 2 === 0);
   const odd = arr.map(Number).filter((num) => num % 2 === 1);
   return [even, odd];
 };
 
-console.log(cleanUpArray(["9", "4", "5", "8"]));
+console.log(cleanUpArray(["9", "4", "5", "8"]));*/
+
+////HALF, QUARTER AND EIGTH
+
+/*Create a function that takes a number and return an array of three numbers: half of the number, quarter of the number and an eighth of the number.
+Test.assertSimilar(halfQuarterEighth(6), [3, 1.5, 0.75])*/
+
+const halfQuarterEihgth = (n) => {
+  let arr = [];
+  arr.push(n / 2, n / 4, n / 8);
+  return arr;
+};
+
+console.log(halfQuarterEihgth(6));
