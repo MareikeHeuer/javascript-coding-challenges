@@ -493,10 +493,18 @@ console.log(cleanUpArray(["9", "4", "5", "8"]));*/
 /*Create a function that takes a number and return an array of three numbers: half of the number, quarter of the number and an eighth of the number.
 Test.assertSimilar(halfQuarterEighth(6), [3, 1.5, 0.75])*/
 
-const halfQuarterEihgth = (n) => {
+/*const halfQuarterEihgth = (n) => {
   let arr = [];
   arr.push(n / 2, n / 4, n / 8);
   return arr;
 };
 
-console.log(halfQuarterEihgth(6));
+console.log(halfQuarterEihgth(6));*/
+
+//// MULTIPLY EVERY ARRAY ITEM BY TWO
+/*Create a function that takes an array with numbers and return an array with the elements multiplied by two.
+ Test.assertSimilar(getMultipliedArr([2, 5, 3]), [4, 10, 6])*/
+
+const getMultipliedArr = (arr) => arr.map((num) => num * 2);
+
+console.log(getMultipliedArr([2, 5, 3]));
