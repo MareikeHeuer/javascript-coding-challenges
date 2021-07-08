@@ -623,6 +623,28 @@ console.log(toStr(10));*/
 /*Create a function that returns the string "Burp" with the amount of "r's" determined by the input parameters of the function.
 Test.assertEquals(longBurp(3), "Burrrp")*/
 
-const longBurp = (num) => `Bu${"r".repeat(num)}p`;
+/*const longBurp = (num) => `Bu${"r".repeat(num)}p`;
 
-console.log(longBurp(3));
+console.log(longBurp(3));*/
+
+//// ES6: DESTRUCTURING ARRAYS II
+/*const arr = ["cars", "planes", ["trains", ["motorcycles"]]]
+
+// Fix the following using es6 destructuring
+// Only edit what's inside of [ trans1, trans2, trans3, trans4 ]
+let [ trans1, trans2, trans3, trans4 ] = arr
+
+/*
+console.log(trans1) // should output "cars"
+console.log(trans2) // should output "planes"
+console.log(trans3) // should output "trains"
+console.log(trans4) // should output "motorcycles"
+*/
+
+const arr = ["cars", "planes", ["trains", ["motorcycles"]]];
+let [trans1, trans2, [trans3, [trans4]]] = arr;
+
+console.log(trans1);
+console.log(trans2);
+console.log(trans3);
+console.log(trans4);
