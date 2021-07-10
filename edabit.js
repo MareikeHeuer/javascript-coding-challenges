@@ -679,9 +679,18 @@ console.log(totalCups(12));*/
 	return methodOne && methodTwo
 }*/
 
-function twoMethods() {
+/*function twoMethods() {
   // find and equals are not regular expression methods.  Replace them.
   let methodOne = /hello/.exec("hello")[0] === "hello";
   let methodTwo = /hello/.test("hello"); // returns a boolean
   return methodOne && methodTwo;
-}
+}*/
+
+//// NEXT NUMBER GREATER THAN A AND B AND DIVISIBLE BY B
+/*You are given two numbers a and b. Create a function that returns the next number greater than a and b and divisible by b.
+Test.assertEquals(divisibleByB(17, 8), 24)
+Test.assertEquals(divisibleByB(98, 3), 99)*/
+
+const divisibleByB = (a, b) => b * Math.ceil(a / b);
+
+console.log(divisibleByB(17, 8));
