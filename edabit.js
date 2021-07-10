@@ -691,6 +691,15 @@ console.log(totalCups(12));*/
 Test.assertEquals(divisibleByB(17, 8), 24)
 Test.assertEquals(divisibleByB(98, 3), 99)*/
 
-const divisibleByB = (a, b) => b * Math.ceil(a / b);
+/*const divisibleByB = (a, b) => b * Math.ceil(a / b);
 
-console.log(divisibleByB(17, 8));
+console.log(divisibleByB(17, 8));*/
+
+//// SPACES BETWEEN EACH CHARACTER
+/*Create a function that takes a string and returns a string with spaces in between all of the characters.
+Test.assertEquals(spaceMeOut("space"), "s p a c e", "Example #1")
+Test.assertEquals(spaceMeOut("far out"), "f a r   o u t", "Example #2")*/
+
+const spaceMeOut = (str) => [...str].join(" ");
+
+console.log(spaceMeOut("far out"));
