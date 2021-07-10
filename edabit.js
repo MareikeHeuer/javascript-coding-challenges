@@ -711,7 +711,7 @@ Test.assertEquals(operation(100, 76), "subtracted")
 Test.assertEquals(operation(6, 4), "multiplied")
 Test.assertEquals(operation(528, 22), "divided")*/
 
-const operation = (num1, num2) =>
+/*const operation = (num1, num2) =>
   num1 + num2 === 24
     ? "added"
     : num1 - num2 === 24
@@ -722,4 +722,12 @@ const operation = (num1, num2) =>
     ? "multiplied"
     : null;
 
-console.log(operation(12, 12));
+console.log(operation(12, 12));*/
+
+//// GET THE SUM OF ALL ARRAY ELEMENTS
+/*Test.assertEquals(getSumOfItems([2, 7, 4]), 13)
+Test.assertEquals(getSumOfItems([45, 3, 0]), 48)*/
+
+const sumArray = (arr) => arr.reduce((acc, cur) => acc + cur);
+
+console.log(sumArray([2, 7, 4]));
