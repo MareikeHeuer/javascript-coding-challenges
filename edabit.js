@@ -728,6 +728,15 @@ console.log(operation(12, 12));*/
 /*Test.assertEquals(getSumOfItems([2, 7, 4]), 13)
 Test.assertEquals(getSumOfItems([45, 3, 0]), 48)*/
 
-const sumArray = (arr) => arr.reduce((acc, cur) => acc + cur);
+/*const sumArray = (arr) => arr.reduce((acc, cur) => acc + cur);
 
-console.log(sumArray([2, 7, 4]));
+console.log(sumArray([2, 7, 4]));*/
+
+//// GET THE FILE NAME
+/*Create a function that returns the selected filename from a path. Include the extension in your answer.
+Test.assertEquals(getFilename("C:/Projects/pil_tests/ascii/edabit.txt"), "edabit.txt")
+Test.assertEquals(getFilename("C:/Users/johnsmith/Music/Beethoven_5.mp3"), "Beethoven_5.mp3")*/
+
+const getFileName = (path) => path.split("/").pop();
+
+console.log(getFileName("C:/Projects/pil_tests/ascii/edabit.txt"));
