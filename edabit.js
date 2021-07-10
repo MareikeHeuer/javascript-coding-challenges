@@ -700,6 +700,26 @@ console.log(divisibleByB(17, 8));*/
 Test.assertEquals(spaceMeOut("space"), "s p a c e", "Example #1")
 Test.assertEquals(spaceMeOut("far out"), "f a r   o u t", "Example #2")*/
 
-const spaceMeOut = (str) => [...str].join(" ");
+/*const spaceMeOut = (str) => [...str].join(" ");
 
-console.log(spaceMeOut("far out"));
+console.log(spaceMeOut("far out"));*/
+
+//// ADD, SUBTRACT, MULTIPLY OR DIVIDE?
+/*Write a function that takes two numbers and returns if they should be added, subtracted, multiplied or divided to get 24. If none of the operations can give 24, return null.
+Test.assertEquals(operation(12, 12), "added")
+Test.assertEquals(operation(100, 76), "subtracted")
+Test.assertEquals(operation(6, 4), "multiplied")
+Test.assertEquals(operation(528, 22), "divided")*/
+
+const operation = (num1, num2) =>
+  num1 + num2 === 24
+    ? "added"
+    : num1 - num2 === 24
+    ? "subtracted"
+    : num1 / num2 === 24
+    ? "divided"
+    : num1 * num2 === 24
+    ? "multiplied"
+    : null;
+
+console.log(operation(12, 12));
